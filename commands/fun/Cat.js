@@ -1,5 +1,5 @@
 const commando = require("discord.js-commando")
-const {fetch} = require("node-fetch")
+const fetch = require("node-fetch")
 
 module.exports = class Cat extends commando.Command{
     constructor(client){
