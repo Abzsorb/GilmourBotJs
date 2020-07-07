@@ -1,4 +1,4 @@
-const {commando} = require("discord.js-commando")
+const commando = require("discord.js-commando")
 const {RichEmbed} = require('discord.js')
 
 module.exports = class Ask extends commando.Command{
