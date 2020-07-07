@@ -1,5 +1,5 @@
 const { CommandoClient } = require('discord.js-commando');
-
+const path = require('path')
 const client = new CommandoClient({
     commandPrefix: process.env.prefix,
     owner: process.env.ownerId, 
