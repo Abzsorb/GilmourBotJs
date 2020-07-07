@@ -3,8 +3,8 @@ const path = require('path');
 const config = require('./config.json');
 
 const client = new CommandoClient({
-    commandPrefix: '?',
-    owner: '569981669776424971', 
+    commandPrefix: process.env.prefix,
+    owner: process.env.ownerId, 
 })
 
 client.once('ready', () =>{
@@ -20,4 +20,4 @@ client.registry.registerGroups([
 
 client.on('error', console.error)
 
-client.login(config.token)
+client.login(process.env.TOKEN)
