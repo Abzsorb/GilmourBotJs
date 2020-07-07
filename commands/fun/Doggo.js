@@ -1,5 +1,5 @@
-const commando = require("discord.js-commando")
-const superAgent = require('superagent')
+const {commando} = require("discord.js-commando")
+const {superAgent} = require('superagent')
 
 module.exports = class Doggo extends commando.Command{
     constructor(client){

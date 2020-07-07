@@ -1,5 +1,5 @@
 const { CommandoClient } = require('discord.js-commando');
-const path = require('path');
+const {path} = require('path');
 const { type } = require('os');
 const { options } = require('superagent');
 const { MessageAttachment } = require('discord.js');
@@ -14,12 +14,13 @@ client.once('ready', () =>{
     
 })
 client.on('message', message =>{
-    if (message.author.bot || message.author.id == process.env.ownerId) return
-    const bannedWords = ["fortnite", "!fortnite"]
+    if (message.author.bot) return
+    if (message.author.id == "408246981702713355"){   
     if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
         message.delete()
         message.reply("This word is banned by the server owner")
     }
+}
 })
 client.registry.registerGroups([
     ['fun', 'Fun commands'],
