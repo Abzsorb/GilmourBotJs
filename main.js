@@ -1,5 +1,7 @@
 const { CommandoClient } = require('discord.js-commando');
-const path = require('path')
+const path = require('path');
+const { type } = require('os');
+const { options } = require('superagent');
 const client = new CommandoClient({
     commandPrefix: process.env.prefix,
     owner: process.env.ownerId, 
@@ -7,7 +9,7 @@ const client = new CommandoClient({
 
 client.once('ready', () =>{
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('With Commando')
+    client.user.setActivity('AvoidingThePuddle', {type:"WATCHING"})
     
 })
 client.registry.registerGroups([
