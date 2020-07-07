@@ -14,7 +14,6 @@ client.once('ready', () =>{
     
 })
 client.on('message', message =>{
-    if (message.author.bot) return
     if (message.author.id == "408246981702713355"){   
     if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
         message.delete()
