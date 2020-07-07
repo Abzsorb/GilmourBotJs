@@ -13,8 +13,8 @@ client.once('ready', () =>{
     
 })
 client.on('message', message =>{
-    const bannedWords = ["fortnite"]
-    if (bannedWords.some(word => message.content.includes(word))){
+    const bannedWords = ["fortnite", "!fortnite"]
+    if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
         message.delete()
         message.reply("This word is banned by the server owner")
     }
