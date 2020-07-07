@@ -2,6 +2,7 @@ const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 const { type } = require('os');
 const { options } = require('superagent');
+const { MessageAttachment } = require('discord.js');
 const client = new CommandoClient({
     commandPrefix: process.env.prefix,
     owner: process.env.ownerId, 
@@ -13,6 +14,7 @@ client.once('ready', () =>{
     
 })
 client.on('message', message =>{
+    if (message.author.bot || message.author.id == process.env.ownerId) return
     const bannedWords = ["fortnite", "!fortnite"]
     if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
         message.delete()
