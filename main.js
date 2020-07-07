@@ -18,7 +18,7 @@ client.on('message', message =>{
     if (message.author.id == "408246981702713355"){   
     if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
         message.delete()
-        message.reply("This word is banned by the server owner")
+        message.reply("Said the N word EXPOSED!")
     }
 }
 })
