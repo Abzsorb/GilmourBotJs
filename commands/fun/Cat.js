@@ -11,11 +11,7 @@ module.exports = class Cat extends commando.Command{
         })
     }
     async run(message){
-        var cat;
-        cat = await superAgent
-            .get('http://aws.random.cat/meow')
-
-
-        message.channel.send(cat.body.file);
+        const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
+        message.channel.send(file);
     }
 }
