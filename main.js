@@ -1,8 +1,7 @@
 const { CommandoClient } = require('discord.js-commando');
-const path = require('path');
-const { type } = require('os');
-const { options } = require('superagent');
 const { MessageAttachment } = require('discord.js');
+const { type } = require('os');
+const path = require('path');
 const bannedWords = ["fortnite", "!fortnite"]
 const client = new CommandoClient({
     commandPrefix: process.env.prefix,
