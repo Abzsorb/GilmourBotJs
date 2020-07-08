@@ -1,5 +1,5 @@
 const commando = require("discord.js-commando")
-const superAgent = require('superagent')
+const fetch = require("node-fetch")
 
 module.exports = class Doggo extends commando.Command{
     constructor(client){
@@ -11,10 +11,7 @@ module.exports = class Doggo extends commando.Command{
         })
     }
     async run(message){
-        var dog;
-        dog = await superAgent
-            .get('https://random.dog/woof.json')
-
-        message.channel.send(dog.body.url)
+        const { url } = await fetch('https://random.dog/woof.json').then(response => response.json());
+        message.channel.send(url)       
     }
 }
