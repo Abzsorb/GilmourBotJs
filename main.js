@@ -23,7 +23,8 @@ client.on('message', message =>{
 })
 client.registry.registerGroups([
     ['fun', 'Fun commands'],
-    ['useful', 'Useful commands']
+    ['useful', 'Useful commands'],
+    ['admin', 'Admin Commands']
 ]).registerDefaults()
 .registerCommandsIn(path.join(__dirname, 'commands'))
 
