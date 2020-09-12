@@ -1,5 +1,5 @@
 const commando = require("discord.js-commando")
-const countdown = require("../../node_modules/countdown.js")
+const countdown = require("./countdown.js")
 
 module.exports = class Dice extends commando.Command{
     constructor(client){
