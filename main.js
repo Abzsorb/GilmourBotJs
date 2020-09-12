@@ -13,14 +13,14 @@ client.once('ready', () =>{
     client.user.setActivity('AvoidingThePuddle', {type:"WATCHING"})
     
 })
-client.on('message', message =>{
-    if (message.author.id == "408246981702713355"){   
-    if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
-        message.delete()
-        message.reply("Said the N word EXPOSED!")
-    }
-}
-})
+// client.on('message', message =>{
+//     if (message.author.id == "408246981702713355"){   
+//     if (bannedWords.some(word => message.content.toLowerCase().includes(word))){
+//         message.delete()
+//         message.reply("")
+//     }
+// }
+// })
 client.registry.registerGroups([
     ['fun', 'Fun commands'],
     ['useful', 'Useful commands']
