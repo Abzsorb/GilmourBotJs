@@ -11,7 +11,7 @@ module.exports = class Dice extends commando.Command{
         })
     }
     async run(message){
-        message.reply(countdown(new Date(2020, 10, 19), countdown.DAYS).toString())
+        message.reply(countdown(new Date(), new Date(2020, 10, 19), countdown.DAYS).toString())
         
     }
 }
