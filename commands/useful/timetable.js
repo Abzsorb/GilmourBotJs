@@ -18,13 +18,13 @@ module.exports = class RPS extends commando.Command{
     }
     async run(message, { text }) {
         text = text.toLowerCase();
-        if (text == 'S4.2A'){
+        if (text == 's4.2a'){
             message.channel.send({files:["https://i.imgur.com/jKAEIH7.png"]})
         }
-        else if (text == "M4.2A"){
+        else if (text == "m4.2a"){
             message.channel.send({files:["https://i.imgur.com/tDsbL6n.png"]})
         }
-        else if (text == "M4.2C"){
+        else if (text == "m4.2c"){
             message.channel.send({files:["https://i.imgur.com/tDsbL6n.png"]})
         }
     }    
