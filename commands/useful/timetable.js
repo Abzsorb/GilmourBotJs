@@ -25,7 +25,7 @@ module.exports = class RPS extends commando.Command{
             message.channel.send({files:["https://i.imgur.com/tDsbL6n.png"]})
         }
         else if (text == "m4.2c"){
-            message.channel.send({files:["https://i.imgur.com/tDsbL6n.png"]})
+            message.channel.send({files:["https://i.imgur.com/2bNBGed.png"]})
         }
     }    
 }
