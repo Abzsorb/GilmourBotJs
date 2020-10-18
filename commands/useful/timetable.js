@@ -6,7 +6,7 @@ module.exports = class RPS extends commando.Command{
             name:'timetable',
             group:'useful',
             memberName:'timetable',
-            description:'Sends Timetable',
+            description:'Sends Timetable Choices: S4.2A, M4.2A, M4.2C',
             args:[
                 {
                     key: 'text',
