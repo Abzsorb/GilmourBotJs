@@ -10,7 +10,7 @@ module.exports = class RPS extends commando.Command{
             args:[
                 {
                     key: 'text',
-                    prompt: 'Pick which time table',
+                    prompt: 'Pick your timetable: S4.2A, M4.2A, M4.2C',
                     type: 'string',
                 }
             ]
