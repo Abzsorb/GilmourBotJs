@@ -11,9 +11,8 @@ module.exports = class Dice extends commando.Command{
         })
     }
     async run(message){
-
         const weeks = countdown(new Date(), new Date(2020, 11, 10), countdown.MONTHS | countdown.DAYS).toString()
-        const days =  countdown(new Date(), new Date(2020,10,10), countdown.DAYS).toString()
+        const days =  countdown(new Date(), new Date(2020,11,10), countdown.DAYS).toString()
         message.reply(`Cyberpunk will release in ${weeks} (${days})`)
     }
 }
