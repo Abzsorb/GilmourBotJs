@@ -10,7 +10,7 @@ const client = new CommandoClient({
 
 client.once('ready', () =>{
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('AvoidingThePuddle', {type:"WATCHING"})
+    client.user.setActivity('Demon\'s Souls', {type:"PLAYING"})
     
 })
 // client.on('message', message =>{
