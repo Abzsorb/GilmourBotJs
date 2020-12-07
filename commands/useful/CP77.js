@@ -26,6 +26,6 @@ module.exports = class Dice extends (
     hours = hours - days * 24;
     minutes = minutes - days * 24 * 60 - hours * 60;
     seconds = seconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60;
-    message.replay(`Cyberpunk will release in ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`)
+    message.reply(`Cyberpunk will release in ${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`)
   }
 };
